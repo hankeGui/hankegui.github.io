@@ -64,6 +64,54 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-new-server" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/05/19/new-server/" class="article-date">
+  <time datetime="2022-05-19T08:48:03.000Z" itemprop="datePublished">2022-05-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/05/19/new-server/">new-server</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="常见配置路径"><a href="#常见配置路径" class="headerlink" title="常见配置路径"></a>常见配置路径</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~/.ssh/id_rsa</span><br><span class="line">~/.zshrc</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="ubuntu-initial"><a href="#ubuntu-initial" class="headerlink" title="ubuntu initial"></a>ubuntu initial</h1><h2 id="install-zsh"><a href="#install-zsh" class="headerlink" title="install zsh"></a>install zsh</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install zsh</span><br><span class="line">chsh -s /bin/zsh</span><br></pre></td></tr></table></figure>
+
+<h2 id="install-oh-my-zsh"><a href="#install-oh-my-zsh" class="headerlink" title="install oh my zsh"></a>install oh my zsh</h2><p><a target="_blank" rel="noopener" href="https://ohmyz.sh/#install">https://ohmyz.sh/#install</a></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c &quot;$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="ssh-key"><a href="#ssh-key" class="headerlink" title="ssh key"></a>ssh key</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen   </span><br><span class="line">~/.ssh/id_rsa</span><br><span class="line">~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<h2 id="git-config"><a href="#git-config" class="headerlink" title="git config"></a>git config</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hankegui.github.io/2022/05/19/new-server/" data-id="cl3mrz18a0000vjns4a4p53mr" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/server/" rel="tag">server</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-mysql-1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2022/04/29/mysql-1/" class="article-date">
@@ -345,7 +393,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sql/" rel="tag">sql</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/server/" rel="tag">server</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sql/" rel="tag">sql</a></li></ul>
     </div>
   </div>
 
@@ -355,7 +403,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/sql/" style="font-size: 20px;">sql</a>
+      <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/server/" style="font-size: 10px;">server</a> <a href="/tags/sql/" style="font-size: 20px;">sql</a>
     </div>
   </div>
 
@@ -364,7 +412,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/05/">五月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">四月 2022</a></li></ul>
     </div>
   </div>
 
@@ -375,6 +423,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/05/19/new-server/">new-server</a>
+          </li>
         
           <li>
             <a href="/2022/04/29/mysql-1/">MYSQL 初始化脚本</a>
@@ -390,10 +442,6 @@
         
           <li>
             <a href="/2022/04/25/mysql/">mysql 安装和配置</a>
-          </li>
-        
-          <li>
-            <a href="/2022/04/22/first/">aaa</a>
           </li>
         
       </ul>
